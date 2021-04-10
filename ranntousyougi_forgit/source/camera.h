@@ -1,6 +1,5 @@
 #pragma once
 #include"component.h"
-
 #include"main.h"
 enum CAMERA_POSITION_STATE
 {
@@ -8,9 +7,7 @@ enum CAMERA_POSITION_STATE
 	CAMERA_POSITION_STATE_TARGET_THIRD_PERSON,
 	CAMERA_POSITION_STATE_TARGET_TOP_VIEW,
 	CAMERA_POSITION_STATE_NUM
-
 };
-
 
 class  CCamera:public CComponent
 {
@@ -21,7 +18,7 @@ private:
 public:
 	CGameObject* GetTarget() { return m_Target; }
 	void SetTarget(CGameObject* set) { m_Target = set; }
-	D3DXMATRIX GetViewMatrix() { return m_viewMatrix; }
+	D3DXMATRIX GetViewMatrix();
 	void SetSatate(CAMERA_POSITION_STATE set) { m_cameraPosState = set; }
 	void Init();
 	void Uninit();

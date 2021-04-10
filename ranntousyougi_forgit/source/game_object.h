@@ -2,8 +2,14 @@
 #include<list>
 #include<vector>
 #include <typeinfo>
-#include<d3dx9.h>
 
+
+#pragma warning(push)
+#pragma warning(disable:4005)
+
+#include <d3dx9.h>
+
+#pragma warning(pop)
 
 class CComponent;
 class CGameObject

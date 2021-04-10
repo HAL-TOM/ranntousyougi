@@ -112,3 +112,8 @@ void CCamera::Draw()
 
 	}
 }
+
+D3DXMATRIX CCamera::GetViewMatrix()
+{
+	return m_viewMatrix;
+} 

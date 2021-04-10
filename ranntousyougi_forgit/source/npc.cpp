@@ -242,7 +242,7 @@ void CNPC::SetUp()
 		CManager::GetScene()->FindComponents<CNPC>(&npcList);
 		CManager::GetScene()->FindComponents<CPlayer>(&playerList);
 
-		CPlayerBase* enemy;
+		CPlayerBase* enemy=nullptr;
 
 		for (CPlayer* p : playerList)
 		{
