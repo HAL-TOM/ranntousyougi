@@ -1,4 +1,6 @@
-#include<D3D11.h>
+
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<io.h>
 #include"renderer.h"
 #include"model.h"
